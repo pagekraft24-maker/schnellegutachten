@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false,
   "redirects": [
     {
@@ -12,6 +12,31 @@
         }
       ],
       "destination": "https://www.schnellegutachten.de/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/leistungen.html",
+      "destination": "/leistungen",
+      "permanent": true
+    },
+    {
+      "source": "/fachkompetenz-elektro-hybrid.html",
+      "destination": "/fachkompetenz-elektro-hybrid",
+      "permanent": true
+    },
+    {
+      "source": "/impressum.html",
+      "destination": "/impressum",
+      "permanent": true
+    },
+    {
+      "source": "/datenschutz.html",
+      "destination": "/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
       "permanent": true
     }
   ],
@@ -83,6 +108,24 @@
           "value": "text/plain; charset=utf-8"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/leistungen",
+      "destination": "/leistungen.html"
+    },
+    {
+      "source": "/fachkompetenz-elektro-hybrid",
+      "destination": "/fachkompetenz-elektro-hybrid.html"
+    },
+    {
+      "source": "/impressum",
+      "destination": "/impressum.html"
+    },
+    {
+      "source": "/datenschutz",
+      "destination": "/datenschutz.html"
     }
   ]
 }
