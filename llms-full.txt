@@ -31,6 +31,7 @@ Einsatzgebiete: Braunschweig, Wolfenbüttel, Salzgitter, Peine, Gifhorn, Helmste
 - Wertgutachten (Kauf, Verkauf, Versicherung, Leasingrückgabe)
 - Gutachten für Lkw, Transporter, Sonder- und Nutzfahrzeuge
 - Gutachten für Elektro- und Hybridfahrzeuge
+- Lackschichtmessung mit NexDiag (Messwerte in µm je Bauteil, Erkennen von Nachlackierungen, Bericht je Fahrzeugseite): https://www.schnellegutachten.de/lackschichtmessung
 - Schadenmanagement für Flotten in Partnerschaft mit RS Fleet
 
 ## Gutachten für Nutzfahrzeuge

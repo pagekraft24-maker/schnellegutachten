@@ -35,6 +35,11 @@
       "permanent": true
     },
     {
+      "source": "/lackschichtmessung.html",
+      "destination": "/lackschichtmessung",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true
@@ -126,6 +131,10 @@
     {
       "source": "/datenschutz",
       "destination": "/datenschutz.html"
+    },
+    {
+      "source": "/lackschichtmessung",
+      "destination": "/lackschichtmessung.html"
     }
   ]
 }

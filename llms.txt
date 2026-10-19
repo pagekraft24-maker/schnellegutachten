@@ -13,6 +13,7 @@
 - [Startseite](https://www.schnellegutachten.de/): Leistungen, Kosten, Ablauf in vier Schritten, Über uns & BVFS-Vorstand, Schadenmanagement, Einsatzgebiete, FAQ, Kontakt
 - [Gutachten für Nutzfahrzeuge](https://www.schnellegutachten.de/leistungen): Lkw & Sattelzugmaschinen, Anhänger & Auflieger, Busse & Kommunalfahrzeuge, Bau- und Landmaschinen, Transporter & Flotten
 - [Fachkompetenz Elektro & Hybrid](https://www.schnellegutachten.de/fachkompetenz-elektro-hybrid): Hochvolt-Qualifikation FHV Stufe 2S nach DGUV Information 209-093
+- [Lackschichtmessung](https://www.schnellegutachten.de/lackschichtmessung): präzise Messwerte in µm, Nachlackierungen erkennen, Dokumentation mit NexDiag
 
 ## Optional
 

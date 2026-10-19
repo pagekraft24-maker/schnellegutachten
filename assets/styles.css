@@ -567,3 +567,16 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opa
 .bvfs__seal b{display:block;font-family:var(--font-head);font-size:15px;letter-spacing:-.01em}
 .bvfs__seal small{display:block;font-size:12.5px;color:var(--muted);line-height:1.35}
 @media (max-width:767px){.bvfs__seal{left:12px;right:12px;bottom:12px;max-width:none}}
+/* Navigation mit 7 Punkten */
+.nav__links a{white-space:nowrap}
+@media (max-width:1439px){.nav__links a{padding:9px 11px}.nav__tel span{display:none}.nav__tel{padding:0 10px}}
+@media (max-width:1140px){.nav__links,.nav__tel,.nav__cta{display:none}.burger{display:block}.nav__pill{max-width:560px}}
+@media (min-width:1440px){.nav__pill{max-width:1260px}}
+/* Unterseite Lackschichtmessung */
+.lackhero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(36px,5vw,72px);align-items:center}
+.lackhero .h1{max-width:none}
+.lackhero__media{position:relative}
+.lackhero__photo{aspect-ratio:4/3.2}
+.lackhero__photo img{width:100%;height:100%;object-fit:cover;object-position:56% 40%}
+@media (max-width:980px){.lackhero{grid-template-columns:minmax(0,1fr)}}
+@media (max-height:760px){.overlay{justify-content:flex-start;overflow-y:auto;padding-top:96px;padding-bottom:28px}.overlay nav a{font-size:1.55rem;padding:2px 0}.overlay__foot{margin-top:18px}}
