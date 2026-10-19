@@ -553,3 +553,8 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opa
 .h1 .ln{display:block}
 .map__head .btn{white-space:nowrap}
 .menu-open .actionbar{transform:translateY(140%)}
+.svc--photo figure.fig--wide{aspect-ratio:1672/445}
+.bento__lg:has(.fig--wide){grid-column:1/-1;grid-row:auto}
+.bento:has(.fig--wide) .bento__sm{grid-column:span 6}
+@media (max-width:980px){.bento:has(.fig--wide) .bento__sm{grid-column:span 12}}
+@media (max-width:767px){.fig--wide .svc__badge{display:none}}
