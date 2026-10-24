@@ -1,0 +1,9 @@
+{
+  "name": "schnellegutachten",
+  "private": true,
+  "description": "Statische Website + Kontaktformular-Funktion (Vercel)",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

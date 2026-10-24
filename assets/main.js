@@ -68,14 +68,14 @@
       btn.disabled = true;
       var body = new URLSearchParams();
       ['name', 'telefon', 'email', 'stadt', 'message'].forEach(function (k) { body.append(k, form.elements.namedItem(k).value); });
+      body.append('datenschutz', 'true');
+      body.append('company_alt', hp ? hp.value : '');
       fetch(form.getAttribute('action'), { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body.toString() })
-        .then(function (r) { return r.text().then(function (t) { return { ok: r.ok, t: t }; }); })
+        .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, j: j }; }); })
         .then(function (res) {
-          var j = null; try { j = JSON.parse(res.t); } catch (_) {}
-          var m = (j && ((j.meta && (j.meta.message || j.meta.detail)) || j.message)) || res.t || '';
-          if (res.ok && (j && (j.code === 'OK' || String(m).toLowerCase().indexOf('spam') === -1))) {
-            show(true, 'Vielen Dank! Wir melden uns zeitnah bei Ihnen.'); form.reset();
-          } else { show(false, 'Ein Fehler ist aufgetreten. Bitte rufen Sie uns an: +49 152 049 346 85'); }
+          if (res.ok && res.j && res.j.ok) { show(true, 'Vielen Dank! Wir melden uns zeitnah bei Ihnen.'); form.reset(); }
+          else if (res.j && res.j.error && res.j.error.indexOf('Bitte') === 0) { show(false, res.j.error); }
+          else { show(false, 'Ein Fehler ist aufgetreten. Bitte rufen Sie uns an: +49 152 049 346 85'); }
         })
         .catch(function () { show(false, 'Ein Fehler ist aufgetreten. Bitte rufen Sie uns an: +49 152 049 346 85'); })
         .then(function () { btn.disabled = false; });
